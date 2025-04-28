@@ -5,18 +5,29 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.product-item img {
+  width: 250px; /* Set the width to be same size */
+  height: 250px; /* Set the height to be same size */
+  object-fit: cover; /* Ensures the image scales properly without distortion */
+  border-radius: 8px; /* Optional: Add rounded corners for a consistent look */
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem; /* Add some space between items */
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
+h1{color: #300c0c;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e43838,
+   0 0 20px #ca364a, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;} /* same text shadow like the pokemon app */
+
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+} /* same hover effect like the event center project*/
 
 @keyframes logo-spin {
   from {

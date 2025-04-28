@@ -1,4 +1,5 @@
 import ProductItem from './ProductItem';
+// actually i just watch the recorded class to learn how to use this code and implement it//
 
 function ProductList({ products }) {
   return (
